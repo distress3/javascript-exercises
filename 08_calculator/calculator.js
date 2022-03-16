@@ -18,8 +18,9 @@ const sum = function(array) {
   for (let i = 0; i <= array.length; i++) {
     if (typeof(array[i]) == 'number') {
       summed += array[i];
-    }
+    } 
   }
+  // summed = array.prototype.map(x => x +)
   return summed;
 };
 
@@ -33,12 +34,19 @@ const multiply = function(array) {
   return product;
 };
 
-const power = function() {
-	
+const power = function(x, y) {
+	let pow = 1;
+  for (let i = 1; i <= y; i++){
+    pow = pow * x;
+  }
+  return pow;
 };
 
-const factorial = function() {
-	
+const factorial = function(n) {
+  f = 1;
+	for (let i = 1; i <= n; i++)
+    f = f * i;
+  return f;
 };
 
 // Do not edit below this line
